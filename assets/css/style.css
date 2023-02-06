@@ -108,7 +108,7 @@ hr {
 }
 
 .debug #navbar {
-    height: 5rem;
+    min-height: 5rem;
     background-color: beige;
 }
 
@@ -132,7 +132,7 @@ hr {
 }
 
 .debug .navbar_menu {
-    height: 3rem;
+    min-height: 3rem;
     border: 2px dashed black;
 }
 
@@ -238,14 +238,20 @@ hr {
     justify-content: center;
 }
 
+#app_header .container {
+    display: flex;
+    align-items: center;
+}
+
 #navbar {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #jumbotron {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
