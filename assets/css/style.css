@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* #endregion common */
@@ -29,9 +29,40 @@ body {
     color: black;
 }
 
+.content_block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .content {
-    width: 70%;
+    width: 80%;
     margin: 2rem 0;
+}
+
+.fl_dir_row {
+    flex-direction: row;
+}
+
+.fl_dir_row_rev {
+    flex-direction: row-reverse;
+}
+
+.fl_dir_col {
+    flex-direction: column;
+}
+
+.fl_dir_col_rev {
+    flex-direction: column-reverse;
+}
+
+.elem_img {
+    width: 40%;
+}
+
+.elem_text {
+    width: 60%;
 }
 
 /* #endregion utilities */
@@ -42,12 +73,12 @@ body {
 }
 
 .debug #app_main {
-    height: 100vh;
+    min-height: 100vh;
     background-color: aqua;
 }
 
 .debug #app_footer {
-    height: 200px;
+    min-height: 200px;
     background-color: aquamarine;
 }
 
@@ -62,7 +93,8 @@ body {
     background-color: beige;
 }
 
-.debug #logo, .debug #login_btn {
+.debug #logo,
+.debug #login_btn {
     height: 3rem;
     aspect-ratio: 4;
     border: 2px dashed black;
@@ -91,6 +123,51 @@ body {
 .debug .content {
     background-color: blue;
     border: 2px dashed black;
+}
+
+.debug #main_content {
+    height: 100%;
+    background-color: brown;
+}
+
+.debug #main_content .content {
+    height: 20rem;
+}
+
+.debug .content_block {
+    background-color: darkgray;
+    border: 2px dashed black;
+}
+
+.debug .content_block:nth-child(2) {
+    background-color: whitesmoke;
+    border: 2px dashed yellow;
+}
+
+.debug .elem_img {
+    height: 100%;
+    background-color: burlywood;
+    border: 2px dashed white;
+}
+
+.debug .elem_text {
+    height: 100%;
+    background-color:cadetblue;
+    border: 2px dashed white;
+}
+
+.debug #download_banner {
+    height: 40rem;
+    border: 2px dashed green;
+}
+
+.debug #download_banner .content_block {
+    height: 100%;
+    border: none;
+}
+
+.debug #download_banner .content {
+    height: 90%;
 }
 /* #endregion debug */
 
@@ -126,5 +203,29 @@ body {
 #jumbotron {
     display: flex;
     justify-content: center;
+}
+
+#jumbotron .content {
+    width: 70%;
+}
+
+#main_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main_content .content {
+    display: flex;
+}
+
+#download_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#download_banner .content {
+    margin: 2rem;
 }
 /* #endregion main */
