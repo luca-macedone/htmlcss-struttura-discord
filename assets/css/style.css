@@ -28,6 +28,12 @@ hr {
     gap: .5rem;
 }
 
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .navbar_link {
     text-decoration: none;
     color: black;
@@ -106,7 +112,8 @@ hr {
     background-color: beige;
 }
 
-.debug #logo,
+.debug .logo,
+.debug #register_btn,
 .debug #login_btn {
     height: 3rem;
     aspect-ratio: 4;
@@ -117,6 +124,7 @@ hr {
     font-size: 1rem;
 }
 
+.debug #register_btn,
 .debug #login_btn {
     display: flex;
     justify-content: flex-end;
@@ -237,12 +245,6 @@ hr {
     align-items: center;
 }
 
-#logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 #jumbotron {
     display: flex;
     justify-content: center;
@@ -290,6 +292,7 @@ hr {
 #footer_bottom {
     width: 80%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin: 1rem;
 }
