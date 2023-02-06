@@ -29,6 +29,11 @@ body {
     color: black;
 }
 
+.content {
+    width: 70%;
+    margin: 2rem 0;
+}
+
 /* #endregion utilities */
 
 /* #region debug */
@@ -78,6 +83,15 @@ body {
     border: 2px dashed black;
 }
 
+.debug #jumbotron {
+    height: 400px;
+    background-color: aqua;
+}
+
+.debug .content {
+    background-color: blue;
+    border: 2px dashed black;
+}
 /* #endregion debug */
 
 /* #region main */
@@ -107,5 +121,10 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+#jumbotron {
+    display: flex;
+    justify-content: center;
 }
 /* #endregion main */
