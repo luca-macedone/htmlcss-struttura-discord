@@ -5,16 +5,107 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 /* #endregion common */
 
 /* #region utilities */
+.container {
+    max-width: 1180px;
+}
+
+.navbar_menu {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.navbar_link {
+    text-decoration: none;
+    color: black;
+}
 
 /* #endregion utilities */
 
 /* #region debug */
+.debug #app_header {
+    background-color: aquamarine;
+}
+
+.debug #app_main {
+    height: 100vh;
+    background-color: aqua;
+}
+
+.debug #app_footer {
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.debug .container {
+    height: 100%;
+    width: 1000px;
+    background-color: azure;
+}
+
+.debug #navbar {
+    height: 5rem;
+    background-color: beige;
+}
+
+.debug #logo, .debug #login_btn {
+    height: 3rem;
+    aspect-ratio: 4;
+    border: 2px dashed black;
+
+    background-color: transparent;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.debug #login_btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.debug .navbar_menu {
+    height: 3rem;
+    border: 2px dashed black;
+}
 
 /* #endregion debug */
 
 /* #region main */
+#app_header {
+    display: flex;
+    justify-content: center;
+}
 
+#app_main {
+    display: flex;
+    justify-content: center;
+}
+
+#app_footer {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 /* #endregion main */
