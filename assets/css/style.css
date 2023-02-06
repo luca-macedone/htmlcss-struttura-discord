@@ -51,19 +51,19 @@ hr {
     margin: 2rem 0;
 }
 
-.fl_dir_row {
+.direction_row {
     flex-direction: row;
 }
 
-.fl_dir_row_rev {
+.direction_row_reverse {
     flex-direction: row-reverse;
 }
 
-.fl_dir_col {
+.direction_column {
     flex-direction: column;
 }
 
-.fl_dir_col_rev {
+.direction_column_reverse {
     flex-direction: column-reverse;
 }
 
@@ -220,6 +220,7 @@ hr {
     background-color: springgreen;
     border: 2px dashed yellow;
 }
+
 /* #endregion debug */
 
 /* #region main */
