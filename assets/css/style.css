@@ -21,11 +21,12 @@ hr {
 }
 
 .navbar_menu {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .5rem;
+    list-style: none;
 }
 
 .logo {
@@ -249,6 +250,10 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#navbar nav {
+    width: 100%;
 }
 
 #jumbotron {
