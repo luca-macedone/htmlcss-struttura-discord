@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --dr-blue: #1b62e8;
+    --dr-greyblue: #89a2e6;
+    --dr-white: #ffffff;
+    --dr-white_darker: #f6f6f6;
+    --dr-black: #22272a;
+}
+
 body {
     font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -17,7 +25,7 @@ hr {
 
 /* #region utilities */
 .container {
-    max-width: 1180px;
+    max-width: 1140px;
 }
 
 .navbar_menu {
@@ -25,7 +33,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: 1.5rem;
     list-style: none;
 }
 
@@ -52,6 +60,10 @@ hr {
     margin: 2rem 0;
 }
 
+.d_flex {
+    display: flex;
+}
+
 .direction_row {
     flex-direction: row;
 }
@@ -69,11 +81,11 @@ hr {
 }
 
 .elem_img {
-    width: 40%;
+    width: 60%;
 }
 
 .elem_text {
-    width: 60%;
+    width: 40%;
 }
 
 .col_4 {
@@ -93,7 +105,6 @@ hr {
 }
 
 .debug #app_main {
-    min-height: 100vh;
     background-color: aqua;
 }
 
@@ -117,7 +128,7 @@ hr {
 .debug #register_btn,
 .debug #login_btn {
     height: 3rem;
-    aspect-ratio: 4;
+    aspect-ratio: 2;
     border: 2px dashed black;
 
     background-color: transparent;
